@@ -33,6 +33,12 @@
 ## 发布资料
 - `docs/发布文案.md`：小红书与 B 站文案
 - `docs/上线发布清单.md`：Vercel 上线与自测清单
+- `docs/代码到部署完成流程.md`：从本地代码到 GitHub、Vercel 的最短流程
+- `docs/自定义域名方案.md`：更短域名的命名建议与接入方式
+
+## 当前地址
+- GitHub 仓库：[https://github.com/xeave/bama-yijiantong](https://github.com/xeave/bama-yijiantong)
+- 线上地址：[https://bama-yijiantong.vercel.app/](https://bama-yijiantong.vercel.app/)
 
 ## 部署建议
 ### Vercel
