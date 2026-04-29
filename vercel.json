@@ -1,0 +1,24 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/meds",
+      "destination": "/pages/meds.html"
+    },
+    {
+      "source": "/health",
+      "destination": "/pages/health.html"
+    },
+    {
+      "source": "/calculator",
+      "destination": "/pages/calculator.html"
+    },
+    {
+      "source": "/nav",
+      "destination": "/pages/nav.html"
+    }
+  ]
+}

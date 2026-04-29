@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>爸妈一键通</title>
+    <meta
+      name="description"
+      content="一个给长辈和家人使用的适老化静态工具站，包含用药提醒、血压血糖记录、大字版计算器和常用网址导航。"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <script defer src="./assets/site.js"></script>
+  </head>
+  <body>
+    <div class="background-orb orb-1"></div>
+    <div class="background-orb orb-2"></div>
+
+    <header class="site-header">
+      <a class="site-mark" href="./index.html">爸妈一键通</a>
+      <nav class="top-nav" aria-label="主导航">
+        <a href="#tools">工具列表</a>
+        <a href="#principles">使用特点</a>
+        <a href="#contact">联系入口</a>
+      </nav>
+    </header>
+
+    <main class="page-shell home-shell">
+      <section class="panel hero-panel" data-reveal>
+        <div class="hero-copy">
+          <p class="eyebrow">纯前端 / 不登录 / 本地保存</p>
+          <h1>给爸妈收藏也能马上会用的杭州工具站</h1>
+          <p class="hero-text">
+            这是一套面向长辈日常场景的轻量工具：用药提醒、血压血糖记录、大字计算器和杭州常用办事入口。打开网页就能直接用，不需要注册，也不用先学一遍。
+          </p>
+          <p class="hero-support">
+            重点只做三件事：字够大、按钮够大、路径够短。适合自己收藏，也适合子女转发给家里长辈。
+          </p>
+          <div class="hero-badges" aria-label="站点特点">
+            <span class="info-pill">适合给爸妈收藏</span>
+            <span class="info-pill">杭州常用入口已整理</span>
+            <span class="info-pill">手机端优先</span>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#tools">立即开始</a>
+            <a class="button button-secondary" href="#principles">查看特点</a>
+          </div>
+        </div>
+
+        <div class="hero-side">
+          <div class="highlight-card">
+            <p class="highlight-label">本期 MVP</p>
+            <p class="highlight-value">4 个高频工具</p>
+            <p class="highlight-note">先验证需求，再继续扩展功能和内容。</p>
+          </div>
+          <div class="highlight-grid">
+            <div class="mini-card">
+              <span class="mini-card-title">不用注册</span>
+              <span class="mini-card-text">减少使用门槛</span>
+            </div>
+            <div class="mini-card">
+              <span class="mini-card-title">本地存储</span>
+              <span class="mini-card-text">不依赖数据库</span>
+            </div>
+            <div class="mini-card">
+              <span class="mini-card-title">手机优先</span>
+              <span class="mini-card-text">方便子女转发</span>
+            </div>
+            <div class="mini-card">
+              <span class="mini-card-title">免费部署</span>
+              <span class="mini-card-text">静态站点即可上线</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel showcase-panel" data-reveal>
+        <div class="showcase-head">
+          <div>
+            <p class="eyebrow">截图推荐</p>
+            <h2 class="section-title">一页看懂，这个站点能帮长辈做什么</h2>
+          </div>
+          <p class="section-note">这一区块更适合做首页截图、封面图和项目介绍首屏。</p>
+        </div>
+
+        <div class="showcase-grid">
+          <article class="showcase-card">
+            <span class="showcase-tag">用药提醒</span>
+            <strong>早上 08:00 降压药</strong>
+            <p>把每天固定服药时间直接列出来，家里人一眼能看懂。</p>
+          </article>
+          <article class="showcase-card">
+            <span class="showcase-tag">健康记录</span>
+            <strong>128 / 82　6.1</strong>
+            <p>记录血压和血糖，方便和家人沟通最近的测量情况。</p>
+          </article>
+          <article class="showcase-card">
+            <span class="showcase-tag">大字计算</span>
+            <strong>按钮够大，不容易点错</strong>
+            <p>保留加减乘除和清空，日常简单计算更直接。</p>
+          </article>
+          <article class="showcase-card">
+            <span class="showcase-tag">杭州入口</span>
+            <strong>挂号、医保、社保、政务</strong>
+            <p>已经整理杭州常用官方入口，减少到处找链接的麻烦。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="tools" class="section-block">
+        <div class="section-head" data-reveal>
+          <div>
+            <p class="eyebrow">工具列表</p>
+            <h2 class="section-title">四个可以直接使用的功能页</h2>
+          </div>
+          <p class="section-note">首页做统一入口，每个工具都单独成页，后续更容易继续扩展。</p>
+        </div>
+
+        <div class="tool-grid">
+          <article class="panel tool-card" data-reveal>
+            <p class="card-kicker">01</p>
+            <h3>长辈用药提醒</h3>
+            <p>
+              记录药名、服用时间和备注，支持本地保存，适合帮助长辈梳理每天的基础服药安排。
+            </p>
+            <ul class="feature-list">
+              <li>新增与删除提醒</li>
+              <li>本地保存</li>
+              <li>按时间排序</li>
+            </ul>
+            <a class="button button-primary" href="./pages/meds.html">进入工具</a>
+          </article>
+
+          <article class="panel tool-card" data-reveal>
+            <p class="card-kicker">02</p>
+            <h3>血压血糖记录</h3>
+            <p>
+              记录日期、收缩压、舒张压和血糖值，集中展示近期数据，方便家庭成员辅助查看。
+            </p>
+            <ul class="feature-list">
+              <li>新增健康记录</li>
+              <li>查看最近一条数据</li>
+              <li>本地保存</li>
+            </ul>
+            <a class="button button-primary" href="./pages/health.html">进入工具</a>
+          </article>
+
+          <article class="panel tool-card" data-reveal>
+            <p class="card-kicker">03</p>
+            <h3>大字版计算器</h3>
+            <p>
+              只保留最常用的加减乘除和清空操作，按钮放大，视觉对比更强，适合日常简单计算。
+            </p>
+            <ul class="feature-list">
+              <li>超大数字显示</li>
+              <li>支持键盘输入</li>
+              <li>简化功能避免误触</li>
+            </ul>
+            <a class="button button-primary" href="./pages/calculator.html">进入工具</a>
+          </article>
+
+          <article class="panel tool-card" data-reveal>
+            <p class="card-kicker">04</p>
+            <h3>常用网址导航</h3>
+            <p>
+              已整理杭州挂号、医保、社保、政务和出行相关官方入口，适合家里长辈直接收藏使用。
+            </p>
+            <ul class="feature-list">
+              <li>杭州官方入口直达</li>
+              <li>按场景分类</li>
+              <li>预留本地化扩展</li>
+            </ul>
+            <a class="button button-primary" href="./pages/nav.html">进入工具</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="principles" class="section-block">
+        <div class="section-head" data-reveal>
+          <div>
+            <p class="eyebrow">使用特点</p>
+            <h2 class="section-title">整站按适老化思路设计</h2>
+          </div>
+        </div>
+
+        <div class="principle-grid">
+          <article class="panel principle-card" data-reveal>
+            <h3>大字清晰</h3>
+            <p>正文、标题和按钮统一放大，关键内容优先突出，减少阅读压力。</p>
+          </article>
+          <article class="panel principle-card" data-reveal>
+            <h3>步骤简单</h3>
+            <p>每个工具都控制在最少步骤内完成主要操作，减少学习成本。</p>
+          </article>
+          <article class="panel principle-card" data-reveal>
+            <h3>不依赖账号</h3>
+            <p>不登录、不注册，避免验证码、密码和复杂找回流程造成流失。</p>
+          </article>
+          <article class="panel principle-card" data-reveal>
+            <h3>轻量可扩展</h3>
+            <p>先用静态方案验证需求，后续再视情况增加云同步、打印和机构定制能力。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="panel contact-panel" data-reveal>
+        <div>
+          <p class="eyebrow">转化入口</p>
+          <h2 class="section-title">如果你需要定制适老化小工具</h2>
+          <p class="section-note">
+            可以把常用功能整理成更贴合家庭、社区或机构场景的专属版本，例如本地医院导航、固定药单模板、健康数据导出等。
+          </p>
+        </div>
+        <div class="contact-placeholder">
+          <div class="contact-row">
+            <span class="contact-label">微信号</span>
+            <div class="contact-value-row">
+              <strong id="wechat-id">z2859397904</strong>
+              <button
+                class="copy-button"
+                type="button"
+                data-copy="z2859397904"
+                data-copy-target="#wechat-copy-status"
+              >
+                点击复制
+              </button>
+            </div>
+            <span id="wechat-copy-status" class="copy-status" aria-live="polite"></span>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label">邮箱</span>
+            <a class="contact-link" href="mailto:2859397904@qq.com">2859397904@qq.com</a>
+          </div>
+          <span class="contact-tip">适合家庭、社区、养老服务等适老化小工具定制</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>爸妈一键通 MVP</p>
+      <p>数据仅保存在当前浏览器，清除缓存后可能丢失。</p>
+    </footer>
+  </body>
+</html>

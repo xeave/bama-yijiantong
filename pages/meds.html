@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>长辈用药提醒</title>
+    <meta name="description" content="适老化大字版用药提醒工具，支持本地保存。"/>
+    <link rel="stylesheet" href="../assets/styles.css" />
+    <script defer src="../assets/site.js"></script>
+    <script defer src="../assets/meds.js"></script>
+  </head>
+  <body>
+    <div class="background-orb orb-1"></div>
+    <div class="background-orb orb-2"></div>
+
+    <header class="site-header">
+      <a class="site-mark" href="../index.html">爸妈一键通</a>
+      <nav class="top-nav" aria-label="页面导航">
+        <a href="../index.html">返回首页</a>
+        <a href="./health.html">血压血糖</a>
+        <a href="./calculator.html">大字计算器</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="panel intro-panel" data-reveal>
+        <p class="eyebrow">工具 01</p>
+        <h1 class="page-title">长辈用药提醒</h1>
+        <p class="section-note">
+          这里记录的是基础服药安排，不会发送真实推送通知。适合先把常用药名和服用时间整理清楚，方便家人查看。
+        </p>
+      </section>
+
+      <section class="tool-layout">
+        <article class="panel" data-reveal>
+          <div class="section-head">
+            <div>
+              <h2 class="section-title small">新增提醒</h2>
+              <p class="section-note">填写药名和时间后会自动保存在当前浏览器。</p>
+            </div>
+          </div>
+
+          <form id="meds-form" class="form-grid">
+            <label class="field">
+              <span>药名</span>
+              <input id="med-name" type="text" maxlength="24" placeholder="例如：降压药" required />
+            </label>
+
+            <label class="field">
+              <span>服用时间</span>
+              <input id="med-time" type="time" required />
+            </label>
+
+            <label class="field field-full">
+              <span>备注</span>
+              <textarea id="med-notes" maxlength="80" placeholder="例如：饭后半小时服用，可不填"></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button class="button button-primary" type="submit">添加提醒</button>
+              <button class="button button-ghost" id="meds-clear" type="button">清空全部</button>
+            </div>
+          </form>
+        </article>
+
+        <article class="panel" data-reveal>
+          <div class="section-head">
+            <div>
+              <h2 class="section-title small">提醒列表</h2>
+              <p id="meds-summary" class="section-note">还没有添加提醒。</p>
+            </div>
+          </div>
+
+          <div id="meds-list" class="list-stack"></div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>提醒数据仅保存在当前设备的浏览器中。</p>
+      <a href="../index.html">回到首页</a>
+    </footer>
+  </body>
+</html>

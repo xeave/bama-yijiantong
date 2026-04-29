@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>大字版计算器</title>
+    <meta name="description" content="适老化大字版计算器，只保留常用加减乘除功能。"/>
+    <link rel="stylesheet" href="../assets/styles.css" />
+    <script defer src="../assets/site.js"></script>
+    <script defer src="../assets/calculator.js"></script>
+  </head>
+  <body>
+    <div class="background-orb orb-1"></div>
+    <div class="background-orb orb-2"></div>
+
+    <header class="site-header">
+      <a class="site-mark" href="../index.html">爸妈一键通</a>
+      <nav class="top-nav" aria-label="页面导航">
+        <a href="../index.html">返回首页</a>
+        <a href="./meds.html">用药提醒</a>
+        <a href="./health.html">血压血糖</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="panel intro-panel" data-reveal>
+        <p class="eyebrow">工具 03</p>
+        <h1 class="page-title">大字版计算器</h1>
+        <p class="section-note">
+          保留最常用的加减乘除和清空操作，按钮足够大，也支持键盘输入，适合快速完成日常简单计算。
+        </p>
+      </section>
+
+      <section class="calculator-layout">
+        <article class="panel calculator-panel" data-reveal>
+          <div class="display-panel">
+            <p id="calc-history" class="display-sub">支持键盘输入</p>
+            <div id="calc-display" class="display-main" aria-live="polite">0</div>
+          </div>
+
+          <div id="calc-grid" class="calc-grid">
+            <button class="calc-button calc-button-danger" type="button" data-action="clear">清空</button>
+            <button class="calc-button" type="button" data-action="backspace">退格</button>
+            <button class="calc-button calc-button-operator" type="button" data-operator="/">÷</button>
+            <button class="calc-button calc-button-operator" type="button" data-operator="*">×</button>
+
+            <button class="calc-button" type="button" data-input="7">7</button>
+            <button class="calc-button" type="button" data-input="8">8</button>
+            <button class="calc-button" type="button" data-input="9">9</button>
+            <button class="calc-button calc-button-operator" type="button" data-operator="-">-</button>
+
+            <button class="calc-button" type="button" data-input="4">4</button>
+            <button class="calc-button" type="button" data-input="5">5</button>
+            <button class="calc-button" type="button" data-input="6">6</button>
+            <button class="calc-button calc-button-operator" type="button" data-operator="+">+</button>
+
+            <button class="calc-button" type="button" data-input="1">1</button>
+            <button class="calc-button" type="button" data-input="2">2</button>
+            <button class="calc-button" type="button" data-input="3">3</button>
+            <button class="calc-button calc-button-equals" type="button" data-action="equals">=</button>
+
+            <button class="calc-button calc-button-zero" type="button" data-input="0">0</button>
+            <button class="calc-button" type="button" data-input=".">.</button>
+          </div>
+        </article>
+
+        <article class="panel tips-panel" data-reveal>
+          <h2 class="section-title small">使用提示</h2>
+          <ul class="feature-list">
+            <li>支持加、减、乘、除四种基础运算</li>
+            <li>按“清空”可以重新开始</li>
+            <li>按“退格”可以删除最后一位</li>
+            <li>电脑上可直接使用数字键盘和回车键</li>
+          </ul>
+
+          <div class="notice-box">
+            <p>如果输入有误，页面会保留当前内容，方便继续修改，不会直接清掉整行。</p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>这是一个简化版计算器，适合日常基础计算。</p>
+      <a href="../index.html">回到首页</a>
+    </footer>
+  </body>
+</html>
